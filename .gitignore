@@ -1,0 +1,24 @@
+node_modules/
+.marp-cache/
+dist/
+coverage/
+
+# Local/runtime state
+.pipeline/
+.plan-state/
+.vscode/
+.idea/
+.claude/
+.codex
+*.local
+*.backup-*
+/vsp-marp
+
+# Source materials and generated bundles are kept out of the public repo.
+/sourcemd/
+*.skill
+
+.DS_Store
+Thumbs.db
+/tmp/
+/image.png

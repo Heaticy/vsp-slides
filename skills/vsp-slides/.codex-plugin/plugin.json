@@ -1,0 +1,24 @@
+{
+  "name": "vsp-slides",
+  "version": "1.0.0",
+  "description": "VSP Slides skill bundle for planning, generating, rendering, auditing, polishing, and exporting Marp slide decks.",
+  "author": {
+    "name": "VSP"
+  },
+  "license": "MIT",
+  "keywords": [
+    "slides",
+    "marp",
+    "ppt",
+    "audit",
+    "presentation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VSP Slides",
+    "shortDescription": "Plan and produce Marp-based slide decks with audit and export workflows.",
+    "longDescription": "VSP Slides provides namespace subskills for slide planning, asset checks, Marp generation, rendering, visual audit, polish, resume, and export.",
+    "developerName": "VSP",
+    "category": "Productivity"
+  }
+}

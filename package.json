@@ -1,0 +1,44 @@
+{
+  "name": "vsp-slides",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@11.5.0",
+  "private": false,
+  "description": "AI-powered Marp slide generation with planning, rendering, audit, polish, and export skills",
+  "license": "MIT",
+  "homepage": "https://github.com/Heaticy/vsp-slides#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Heaticy/vsp-slides.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Heaticy/vsp-slides/issues"
+  },
+  "files": [
+    "LICENSE",
+    "NOTICE.md",
+    "README.md",
+    "scripts/",
+    "skills/",
+    "src/"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "generate": "node --import tsx scripts/generate-and-render.ts",
+    "audit": "node --import tsx scripts/audit.ts",
+    "screenshot": "node --import tsx scripts/screenshot-and-review.ts"
+  },
+  "dependencies": {
+    "image-size": "^2.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.0.0",
+    "@types/node": "^25.9.1",
+    "eslint": "^9.0.0",
+    "playwright": "^1.50.0",
+    "sharp": "^0.33.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}

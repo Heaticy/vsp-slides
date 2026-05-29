@@ -1,0 +1,23 @@
+{
+  "name": "vs",
+  "version": "1.0.0",
+  "description": "Short alias skill bundle for VSP Slides namespace commands.",
+  "author": {
+    "name": "VSP"
+  },
+  "license": "MIT",
+  "keywords": [
+    "slides",
+    "marp",
+    "ppt",
+    "alias"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "VS",
+    "shortDescription": "Short alias namespace for VSP Slides workflows.",
+    "longDescription": "VS exposes short namespace entries such as vs:plan and vs:start that route to the corresponding VSP Slides subskills.",
+    "developerName": "VSP",
+    "category": "Productivity"
+  }
+}

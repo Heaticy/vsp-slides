@@ -1,0 +1,25 @@
+workflow:
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v/'
+    - when: never
+
+variables:
+  COREPACK_ENABLE_STRICT: "0"
+  PNPM_HOME: "$CI_PROJECT_DIR/.npm-global"
+
+typecheck:
+  stage: test
+  tags:
+    - latex-runner
+  before_script:
+    - node --version
+    - npm --version
+    - npm install --global pnpm@9.15.9 --prefix "$PNPM_HOME"
+    - export PATH="$PNPM_HOME/bin:$PATH"
+    - pnpm --version
+    - pnpm config set package-manager-strict false
+    - pnpm install --frozen-lockfile
+  script:
+    - pnpm typecheck
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v/'
